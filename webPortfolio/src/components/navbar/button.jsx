@@ -13,8 +13,9 @@ const Button = ({ text }) => {
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
     >
-      commission
-      <img className="bat" src={isHovered1 ? batopen : batclosed} alt="" />
+      {text}
+      <img className="bat" src={isHovered ? batopen : batclosed} alt="" />
     </div>
   );
 };
+export default Button
