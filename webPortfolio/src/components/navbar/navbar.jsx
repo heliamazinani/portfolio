@@ -7,10 +7,6 @@ import back from '../../assets/back.svg';
 import front from '../../assets/front.svg'; 
 import Button from "./button";
 const Navbar = () => {
-    const [isHovered, setIsHovered] = useState(false);
-    const [isHovered1, setIsHovered1] = useState(false);
-    const [isHovered2, setIsHovered2] = useState(false);
-    const [isHovered3, setIsHovered3] = useState(false);
     const [isHovered4, setIsHovered4] = useState(false);
 
     return (
