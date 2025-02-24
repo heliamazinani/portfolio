@@ -1,0 +1,50 @@
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0px 80px;
+}
+.nav-menu{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 80px;
+    font-size: 20px;
+}
+
+.nav-connect{
+    display: grid;
+    columns: 10px;
+    
+}
+.letter, .textin {
+    grid-area: 1 / 1;
+
+  }
+.logo{
+    height: 35vh;
+
+}
+.bat{
+    height: 10vh;
+    margin-top: auto;
+}
+.textin{
+    width: 100%;
+    margin: 10px ;
+    font-size: 2.3vh;
+    padding: 10px 10px 10px 10px;
+
+}
+.letter{
+    height: 13vh;
+    cursor: pointer;
+}
+.button-divider{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0; 
+    padding: 0;
+
+}
