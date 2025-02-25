@@ -1,0 +1,23 @@
+.latest-works{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 40vh;
+    color: #2e2e2e;
+}
+.data{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    grid-template-rows: repeat(2, 1fr); 
+    gap: 20px; 
+    padding: 20px; 
+}
+
+.image{
+    height: 40vh;
+}
+.to-gallery{
+    text-align: center;
+    margin-top: 20vh;
+    cursor: pointer;
+}
