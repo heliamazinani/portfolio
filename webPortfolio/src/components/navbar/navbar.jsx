@@ -6,19 +6,28 @@ import batopen from '../../assets/bat-open.svg';
 import back from '../../assets/back.svg'; 
 import front from '../../assets/front.svg'; 
 import Button from "./button";
+import AnchorLink from 'react-anchor-link-smooth-scroll'
+import menu from "../../assets/menu.svg"
+import close from "../../assets/close.svg"
 const Navbar = () => {
     const [isHovered4, setIsHovered4] = useState(false);
 
     return (
+        <div>
+        <div className="alll"></div>
         <div className="navbar">
+            
             <img className="logo" src={logo} alt="" />
+            <img src={menu} alt="" className="nav-open"  />
+          
             <ul className="nav-menu">
+                <img src={close} alt="" className="nav-close" />
                 <li>
-                    <Button text = "home"></Button>
+                    <Button text = "Home"></Button>
 
                 </li>
                 <li>            
-                <Button text = "commission"></Button>
+                <Button text = "Commission"></Button>
                         
                         
                     </li>
@@ -28,7 +37,9 @@ const Navbar = () => {
                 <li> 
                 <Button text = "Gallery"></Button>
                 </li>
+              
             </ul>
+            <AnchorLink className="anchorlink" offset={50} href="#contact">
                      <div className="nav-connect" 
                      onMouseEnter={() => setIsHovered4(true)}
                      onMouseLeave={() => setIsHovered4(false)}
@@ -37,7 +48,11 @@ const Navbar = () => {
                        
                         <img className="letter" src={isHovered4 ? front : back} alt="" ></img>
                         <div className="textin">{isHovered4 ? ' ' : 'contact me'}</div>
+                       
                     </div>
+                    </AnchorLink>
+                    
+        </div>
         </div>
     );
 }
