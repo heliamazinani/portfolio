@@ -3,7 +3,7 @@
     align-items: center;
     flex-direction: column;
     margin-top: 40vh;
-    margin-bottom: 40vh;
+    margin-bottom: 60vh;
     color: #2e2e2e;
 }
 .data{
@@ -14,6 +14,10 @@
     padding: 20px; 
 }
 
+.titlee{
+    font-size: 45px;
+    color: #602929;
+}
 .image{
     height: 40vh;
 }
@@ -21,4 +25,25 @@
     text-align: center;
     margin-top: 20vh;
     cursor: pointer;
+}
+@media (max-width:768px) {
+    .latest-works{
+        align-items: center;
+        gap:70px;
+        margin: 20px 170px;
+    }
+    .image{
+        height: 30vh;
+    }
+    .data{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); 
+        grid-template-rows: repeat(3, 1fr); 
+        gap: 20px; 
+        padding: 20px; 
+    }
+    .titlee{
+        font-size: 30px;
+    }
+    
 }

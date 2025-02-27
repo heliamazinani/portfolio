@@ -78,6 +78,11 @@ z-index: -1;
     color: #602929;
 }
 .nav-close{
+    display: none;
+    height: 20px;
+}
+.nav-open{
+    display: none;
     height: 20px;
 }
 
@@ -94,16 +99,27 @@ z-index: -1;
         position: fixed;
         top: 15px;
         right: 30px;
+        cursor: pointer;
     }
     .nav-close{
         height: 20px;
         display: block;
         position: relative;
-        top: 30px;
-        left: 20px;
+        top: 15px;
+        left: 50px;
     }
     .nav-menu{
         position: fixed;
-        
+        flex-direction: column;
+        align-items: center;
+        background : linear-gradient(rgba(141, 141, 141, 0.5), rgba(150, 150, 150, 0.5)), /* Adjust the opacity here */url('../../assets/back.JPG') no-repeat center center;
+        padding-left: 10px;
+        padding-right: 10px;
+        top: -10px;
+        gap: 30px;
+        height: 110%;
+        z-index: 2;
+        transition: right 0.5s;
+        right: -190px;
     }
 }

@@ -4,7 +4,7 @@ import logo from '../../../assets/logo.svg';
 const Latest = () =>{
     return(
         <div className="latest-works">
-            <div className="title">
+            <div className="titlee">
                 <h1>My Latest Work</h1>
                 
             </div>
