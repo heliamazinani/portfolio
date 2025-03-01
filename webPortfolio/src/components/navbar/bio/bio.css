@@ -29,6 +29,18 @@
   width: 200px;
   height: auto;
 }
+.me-back {
+    float: right;
+    margin: 0 15px 15px 0;
+  
+
+
+    animation:  2s 1s  slideInFromLeft forwards;
+
+    width: 200px;
+    height: auto;
+  }
+
 .resume{
     padding: 25px;
     border-radius: 1px;
@@ -40,6 +52,26 @@
 }
 .resume:hover{
     border: 3px solid black;
+}
+
+@keyframes slideInFromLeft {
+    0% {
+        
+    }
+    100% {
+        transform-style: preserve-3d;
+        transform:translateX(-78px) rotateY(80deg) ;
+    }
+}
+.sleep {
+    display: grid;
+
+    align-items: center;
+
+    height: 300px;
+}
+.sleep img {
+    grid-area: 1 / 1;
 }
 @media(max-width:768px) {
     .me{

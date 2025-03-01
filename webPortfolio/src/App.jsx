@@ -4,6 +4,7 @@ import Bio from "./components/navbar/bio/bio";
 import Latest from "./components/navbar/latest/latest";
 import Contact from "./components/navbar/contact/contact";
 import Home from "./pages/home.jsx"
+import{BrowserRouter} from "react-router-dom"
 const App = () => {
 return(
   <div>

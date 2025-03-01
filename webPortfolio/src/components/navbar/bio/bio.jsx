@@ -1,10 +1,14 @@
 import React from "react";
 import './bio.css'
 import me from '../../../assets/me.svg'
+import back from  '../../../assets/me-back.svg'
 const Bio = () =>{
     return(
 <div className="bio">
+    <div className="sleep">
 <img className='me' src={me} alt="" />
+<img  onload="document.body.className += ' loaded';" className='me-back' src={back} alt="" />
+</div>
 <h1>about me</h1>
 
     <p>Hi there! I'm Helia, a computer engineering student with a deep passion for art.

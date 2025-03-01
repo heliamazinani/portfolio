@@ -80,6 +80,7 @@
     width: 700px;
     border: solid black;
     padding-left: 20px;
+    padding-top: 20px;
     border-radius: 4px;
     background: rgb(215, 215, 215);
 
@@ -90,4 +91,32 @@
     padding: 25px;
     background: #602929;;
     cursor: pointer;
+}
+@media (max-width:768px) {
+    .contact{
+        gap: 50px;
+        margin: 50px 70px;
+        align-items: start;
+    }
+    .title h1{
+        padding: 0px 30px;
+        font-size: 50px;
+        font-weight: 600;
+        color: #602929;
+    }
+    .section{
+        flex-direction: column;
+        padding-right: 50px;
+    }
+    .contact-right input{
+        border: solid black;
+        width: 400px;
+        height: 78px;
+
+    }
+    .contact-right textarea{
+        width: 350px;
+
+    
+    }
 }
