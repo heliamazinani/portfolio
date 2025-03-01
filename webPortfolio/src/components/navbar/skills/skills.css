@@ -63,3 +63,52 @@
 #js{
     width: 700px;
 }
+
+.vertical-rectangle {
+    position: absolute;
+    top: 0;
+    left: 2px;
+    width: 10px; /* Adjust width as needed */
+    height: 100px; /* Adjust height as needed */
+    background-color: #602929; /* Example background color */
+    animation: drip 1s 4s  forwards;
+  }
+.droplet{
+    position: absolute;
+    top: 90px;
+    left: 0;
+    background-color: #602929;
+    width: 15px;
+    height: 20px;
+    border-top-left-radius:30px;
+    border-top-right-radius:30px ;
+    border-bottom-right-radius:30px ;
+    border-bottom-left-radius:30px ;
+    animation: driplet 1s 4s  forwards;
+    z-index: 10;
+}
+.blood{
+    width: 100px;
+    height: 200px;
+    position: relative;
+
+}
+
+@keyframes drip {
+    0% {
+        
+    }
+    100% {
+
+        height: 200px;
+    }
+}
+@keyframes driplet {
+    0% {
+        
+    }
+    100% {
+
+        transform:translateY(100px)
+    }
+}

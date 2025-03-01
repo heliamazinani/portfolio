@@ -10,7 +10,10 @@ const Skills = () => {
             <div className="skill" >
                     <span className="skill-name">Procreate</span>
                     <div className="skill-level" id="pro"></div>
+                    <div className="blood">
                     <div class="vertical-rectangle"></div>
+                    <div className="droplet"></div>
+                    </div>
                 </div>
                 <div className="skill">
                     <span className="skill-name">Java</span>
