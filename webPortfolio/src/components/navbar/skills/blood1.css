@@ -1,0 +1,59 @@
+.vertical-rectangle1 {
+    position: absolute;
+    top: 0;
+    left: 9.8px;
+    width: 10px; /* Adjust width as needed */
+    height: 50px; /* Adjust height as needed */
+    background-color: #602929; /* Example background color */
+
+  }
+.droplet1{
+    position: absolute;
+    top: 40px;
+    left: 5px;
+
+    width: 20px;
+
+
+
+    z-index: 10;
+}
+.top-blood1{
+    width: 30px;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+}
+.blood1{
+    width: 100px;
+    height: 200px;
+    position: relative;
+
+}
+.animate .vertical-rectangle1 {
+    animation: drip1 1s forwards;
+  }
+  
+  .animate .droplet1 {
+    animation: driplet1 1s forwards;
+  }
+
+@keyframes drip1 {
+    0% {
+        
+    }
+    100% {
+
+        height: 100px;
+    }
+}
+@keyframes driplet1 {
+    0% {
+        
+    }
+    100% {
+
+        transform:translateY(50px)
+    }
+}

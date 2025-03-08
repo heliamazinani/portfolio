@@ -5,6 +5,8 @@ import batclosed from "../../assets/bat-closed.svg";
 import batopen from "../../assets/bat-open.svg";
 import back from "../../assets/back.svg";
 import front from "../../assets/front.svg";
+import { Outlet, Link } from "react-router-dom";
+
 const Button = ({ text }) => {
   const [isHovered, setIsHovered] = useState(false);
   return (
@@ -13,7 +15,9 @@ const Button = ({ text }) => {
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
     >
-      {text}
+    
+            {/* <Link to="/">{text}</Link> */}
+          
       <img className="bat" src={isHovered ? batopen : batclosed} alt="" />
     </div>
   );
