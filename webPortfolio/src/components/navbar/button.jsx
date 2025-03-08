@@ -9,6 +9,7 @@ import { Outlet, Link } from "react-router-dom";
 
 const Button = ({ text }) => {
   const [isHovered, setIsHovered] = useState(false);
+  let links = "/"+text;
   return (
     <div
       className="button-divider"
@@ -16,7 +17,7 @@ const Button = ({ text }) => {
       onMouseLeave={() => setIsHovered(false)}
     >
     
-            {/* <Link to="/">{text}</Link> */}
+            <Link className="link" to={links} >{text}</Link>
           
       <img className="bat" src={isHovered ? batopen : batclosed} alt="" />
     </div>

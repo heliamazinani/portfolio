@@ -4,7 +4,7 @@ import Latest from "../components/navbar/latest/latest";
 import Contact from "../components/navbar/contact/contact";
 import Skills from "../components/navbar/skills/skills";
 
-const Commission = () =>{
+const Gallery = () =>{
     return(
 
         <div>
@@ -14,4 +14,4 @@ const Commission = () =>{
     );
 }
 
-export default Commission
+export default Gallery
