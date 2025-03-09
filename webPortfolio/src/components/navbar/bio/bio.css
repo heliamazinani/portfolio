@@ -32,8 +32,6 @@
 .me-back {
     float: right;
     margin: 0 15px 15px 0;
-  
-
 
     animation:  2s 1s  slideInFromLeft forwards;
 

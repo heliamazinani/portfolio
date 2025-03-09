@@ -1,16 +1,88 @@
-.letterkh{
+.letterkh {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 25vh;
-    margin-bottom: 60vh;
+    margin-top: 400px;
+    margin-bottom: 1000px;
+  }
+  
+  .let-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  .let,
+  .let1,
+  .innerletter {
+    grid-column: 1 / -1;
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 25%;
+ 
+  }
+  
+  .let {
+    z-index: 1;
+    width: 50%;
+  }
+  
+  @keyframes goin {
+    0% {
+        
+    }
+    100% {
+        transform-style: preserve-3d;
+        transform:translateY(-78px) ;
+    }
 }
-.innerletter{
+
+  .innerletter {
+    width: 40%;
+    height: 50%;
+    z-index: 2;
     display: flex;
     flex-direction: column;
     align-items: start;
-    background-color: antiquewhite;
-    padding: 100px 160px;
+    margin-left: 4%;
+    position:absolute;
+    top: 250px;
+    background-color: beige;
     border: solid black 4px;
     border-radius: 3px;
+  }
+
+  .let1 {
+    width: 50%;
+    z-index: 3;
+  }
+  .help{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    margin-top: 5px;
+    margin-right: 5%;
+  }
+  
+  .go {
+    z-index: 4;
+    padding: 5px; 
+    background-color: #863a3a;
+    border: black solid 2px;
+    position: relative; 
+    color: rgba(240, 248, 255, 0.429);
+}
+.message{
+    width: 300px;
+    padding-top:10px ;
+    padding-left: 10px;
+    background: none;
+
+}
+.upload{
+    width: 70px;
+    color: rgba(0, 0, 0, 0.656);
+    background: none;
+    border-color: rgba(0, 0, 0, 0.47);
 }
