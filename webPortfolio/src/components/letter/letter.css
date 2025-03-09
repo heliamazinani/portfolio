@@ -1,0 +1,16 @@
+.letterkh{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 25vh;
+    margin-bottom: 60vh;
+}
+.innerletter{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    background-color: antiquewhite;
+    padding: 100px 160px;
+    border: solid black 4px;
+    border-radius: 3px;
+}
