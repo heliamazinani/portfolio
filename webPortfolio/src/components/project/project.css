@@ -1,0 +1,12 @@
+.pborder{
+    display: flex;
+    border: 2px black solid;
+    border-radius: 20px;
+    align-items: center;
+    margin-left: 20%;
+    margin-right: 30%;
+    margin-top: 10%;
+}
+.ppic{
+    height: 200px;
+}
