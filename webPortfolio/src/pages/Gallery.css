@@ -1,0 +1,14 @@
+.paintings{
+    height:  500px;
+    border-width: 30px;
+    border-style: ridge;
+    border-color: #211916;
+    margin-top: 80px;
+}
+.wall{
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+
+}
