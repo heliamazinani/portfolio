@@ -1,0 +1,53 @@
+[
+    {
+      "id": 1,
+      "name": "Jane Doe",
+      "image": "/images/birdi.jpg"
+    },
+    {
+      "id": 2,
+      "name": "Birdi",
+      "image": "/images/bowl.jpg"
+    },
+    {
+        "id": 3,
+        "name": "eye1",
+        "image":"/images/ferdowsi.JPG"
+      },
+      {
+        "id": 4,
+        "name": "eye1",
+        "image": "/images/GTC.JPG"
+      },
+      {
+        "id": 5,
+        "name": "ferdowsi",
+        "image":"/images/di.JPG"
+      },
+      {
+        "id": 6,
+        "name": "GTC",
+        "image": "/images/cock.jpg"
+      },
+      {
+        "id": 7,
+        "name": "sj",
+        "image": "/images/rats.jpg"
+      },
+      {
+        "id": 8,
+        "name": "sj",
+        "image": "/images/fer.gif"
+      },
+      {
+        "id": 9,
+        "name": "sj",
+        "image": "/images/tsm.gif"
+      },
+      {
+        "id": 10,
+        "name": "sj",
+        "image": "/images/t.gif"
+      }
+
+  ]

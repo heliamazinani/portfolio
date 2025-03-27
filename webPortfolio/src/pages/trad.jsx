@@ -21,8 +21,11 @@ const Trad = ({data1}) =>{
     <ul>
       {data.map((user) => (
         <div key={user.id}>
-        
+        <div className="frame">
+        <div className="boxx"></div>
         <img className="paintings" src={user.image} alt=""></img>
+        
+        </div>
 
         </div>
       ))}

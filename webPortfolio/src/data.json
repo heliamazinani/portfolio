@@ -2,52 +2,17 @@
     {
       "id": 1,
       "name": "Jane Doe",
-      "image": "/images/birdi.jpg"
+      "image": "/images/snake.jpg"
     },
     {
       "id": 2,
       "name": "Birdi",
-      "image": "/images/bowl.jpg"
+      "image": "/images/eye2.jpg"
     },
     {
         "id": 3,
         "name": "eye1",
         "image": "/images/eye1.jpg"
-      },
-      {
-        "id": 4,
-        "name": "eye1",
-        "image": "/images/eye2.jpg"
-      },
-      {
-        "id": 5,
-        "name": "ferdowsi",
-        "image": "/images/ferdowsi.JPG"
-      },
-      {
-        "id": 6,
-        "name": "GTC",
-        "image": "/images/GTC.JPG"
-      },
-      {
-        "id": 7,
-        "name": "sj",
-        "image": "/images/di.JPG"
-      },
-      {
-        "id": 8,
-        "name": "sj",
-        "image": "/images/fer.gif"
-      },
-      {
-        "id": 9,
-        "name": "sj",
-        "image": "/images/tsm.gif"
-      },
-      {
-        "id": 10,
-        "name": "sj",
-        "image": "/images/t.gif"
       }
 
   ]

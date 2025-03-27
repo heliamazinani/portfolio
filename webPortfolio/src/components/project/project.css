@@ -1,13 +1,21 @@
 .pborder{
-    display: flex;
-    border: 3px black solid;
+  
+    border-left: 1px black solid;
+    position: relative;
+    z-index: 1;
+    transform: translateZ(0);
 
-    border-radius: 20px;
-    align-items: center;
     margin-left: 20%;
     margin-right: 30%;
     margin-top: 10%;
-    background-color: rgb(229, 230, 227);
+    margin-bottom: 10%;
+}
+.fix{
+    display: flex;
+    align-items: center;
+    border: 2px black solid;
+    margin-top: 10%;
+    background-color: #9e9e9e;
     padding-right: 100px;
     padding: 10px;
     text-decoration: none;
@@ -18,14 +26,16 @@ a{
 }
 .ppic{
     height: 150px;
-    border: 4px black solid;
-    border-radius: 5px;
+    border: 4px rgb(216, 216, 216) solid;
+    
+
 }
 .pdis{
     display: inline;
     width: 300px; 
     height: 100px;
     margin-top: 20px;
+    color: rgb(40, 40, 40);
 
 }
 .pname{
@@ -33,11 +43,42 @@ a{
 }
 .plan{
     font-size: 16px;
+    margin-bottom: 90px;
+    margin-left: 50px;
+    color: rgb(40, 40, 40);
 }
 .pcontainer{
     display: flex;
     flex-direction: column;
     padding: 10px;
     justify-content: space-between;
+    margin-top: 0;
+    margin-bottom: 50px;
     height: 70px;
 }
+.pborder::before {
+    content: "";
+    position: absolute;
+    z-index: -2;
+    width: 100%;
+    height: 100%;
+    top: 20px;
+    left: 20px;
+    border-radius: inherit;
+    background: repeating-linear-gradient(
+      45deg,
+      #0000007c,
+      #0000007c 2px,
+      transparent 2px,
+      transparent 6px
+    );
+    transition: all 0.3s ease;
+  }
+
+
+.pborder:hover::before {
+    top: 40px;
+    left: 40px;
+  }
+  
+  
