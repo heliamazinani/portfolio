@@ -5,6 +5,7 @@ import Contact from "../components/navbar/contact/contact";
 import Skills from "../components/navbar/skills/skills";
 import Project from "../components/project/project";
 import gtc from "../assets/gtc.jpg"
+import tsm from "../../public/images/t.gif"
 
 const Portfolio = () =>{
     return(
@@ -17,7 +18,11 @@ const Portfolio = () =>{
 
             <Project name={"Traveling Sales Man"} 
             dis={"my second semesters midterm project with hand drawn graphics."}
-            language={"language: Java"} link={"https://github.com/heliamazinani/tsm/branches"} im={gtc} ></Project>
+            language={"language: Java"} link={"https://github.com/heliamazinani/tsm/branches"} im={tsm} ></Project>
+
+<Project name={"Traveling Sales Man"} 
+            dis={"my second semesters midterm project with hand drawn graphics."}
+            language={"language: Java"} link={"https://github.com/heliamazinani/tsm/branches"} im={tsm} ></Project>
         <Contact></Contact>
         </div>
     );
