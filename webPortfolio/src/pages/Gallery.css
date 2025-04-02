@@ -11,6 +11,7 @@
     justify-content: center;
     margin-right: 30%;
     margin-bottom: 20px;
+   
 }
 
 .bb {
@@ -46,54 +47,24 @@
 .paintings {
     height: auto;
     width: 400px;
-    border-width: 5px;
-    border-style: solid;
-    border-color: #211916;
+    max-height: 570px;
+
+    border: double 4px rgb(95, 85, 72) ;
     transition: transform 0.6s;
     transform-style: preserve-3d;
+    align-content: center;
+    background-color: rgb(223, 214, 196);
 }
 
 .paintings.flipped {
     transform: rotateY(180deg);
 }
 
-.namewww {
-    position: absolute;
-    top: 0;
-    left: 100%;
-    width: 100%;
-    height: 100%;
-    background-color: rgb(223, 214, 196);
-    color: rgb(73, 73, 73);
-    font-size: 16px;
-    text-shadow: 1px 1px rgba(205, 205, 205, 0.76);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border: 2px double rgb(48, 48, 48);
-    transition: transform 0.2s ease;
-}
 
-.www {
-    position: absolute;
-    top: 0;
-    left: 100%;
-    width: 100%;
-    height: 100%;
-    background-color: rgb(223, 214, 196);
-    color: rgb(73, 73, 73);
-    font-size: 16px;
-    text-shadow: 1px 1px rgba(205, 205, 205, 0.76);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border: 2px double rgb(48, 48, 48);
-    z-index: -1;
-}
 
 .namewww.animate {
     transform-style: preserve-3d;
-    transform: translateX(-460px) rotateY(180deg);
+    transform: translateX(460px) rotateY(180deg);
     color: rgb(223, 214, 196);
 }
 
@@ -104,4 +75,105 @@
     flex-direction: column;
     align-items: center;
     padding-top: 50%;
+    background-color: rgb(223, 214, 196);
+}
+.flip-card {
+    background-color: rgb(223, 214, 196);
+    display:flex ;
+    width: 410px;
+    height: 600px;
+    perspective: 1000px;
+   
+    z-index: -2;
+}
+.dis {
+    background-color: rgb(235, 218, 182);
+   display: flex;
+   align-items: center;
+   flex-direction: column;
+    padding-left: 50px;
+    
+    position: absolute;
+    left: 390px;
+    top: 0;
+    display:flex ;
+    width: 400px;
+    height: 600px;
+   
+    z-index: -1;
+    color:  rgb(95, 85, 72) ;
+
+    
+}
+.flip-card{
+    
+    background-color: aqua;
+   
+}
+.flip-card-inner {
+    position: relative;
+    width: 410px;
+    background-color: rgb(223, 214, 196);
+    height: 100%;
+    border-right:3px black ;
+    z-index: 3;
+    text-align: center;
+    transition: transform 0.3s;
+    transition-delay: 0.1s;
+    transform-style: preserve-3d;
+}
+
+.flip-card.flipped .flip-card-inner {
+    transform:   translateX(400px) rotateY(150deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+    position: absolute;
+    background-color: rgb(223, 214, 196);
+
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    backface-visibility: hidden;
+}
+.flip-card-backk {
+    background-color: rgb(230, 210, 169);
+    position: absolute;
+    width: 410px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    
+    z-index: -1;
+}
+.kms{
+    background-color: aqua;
+    border: 20px rgb(79, 42, 14) solid;
+    margin: 200px;
+    margin-left: 400px;
+    width: 840px;
+}
+.flip-card-front {
+    background-color: rgb(238, 224, 196);
+    color: black;
+    border-right:3px black solid ;
+}
+
+.flip-card-back {
+    background-color: rgb(235, 218, 182);
+    color:  rgb(95, 85, 72) ;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    transform:  rotateY(180deg);
+}
+.writing{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    text-shadow: 1px 1px rgba(0, 0, 0, 0.208);
+    margin-top: 200px;
 }

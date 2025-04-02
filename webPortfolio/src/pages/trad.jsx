@@ -1,49 +1,70 @@
-import React, { useEffect, useState, useRef } from "react";
+import React, { useEffect, useState } from "react";
 import Contact from "../components/navbar/contact/contact";
 
 import "./Gallery.css";
 
 const Trad = ({ data1 }) => {
-    const [data, setData] = useState([]);
-    const [currentIndex, setCurrentIndex] = useState(0); // Tracks the current image index
-    const [isAnimatingName, setIsAnimatingName] = useState(false); // Tracks animation for name
-  
-    useEffect(() => {
-      setData(data1);
-    }, [data1]);
-  
-    const handleImageClick = () => {
-      setIsAnimatingName(true); // Trigger name animation
-      setTimeout(() => {
-        setIsAnimatingName(false); // Remove animation class after animation duration
-        setCurrentIndex((prevIndex) => (prevIndex + 1) % data.length); // Switch to the next image
-      }, 500); // Match the duration of the CSS animation
-    };
+  const [data, setData] = useState([]);
+  const [currentIndex, setCurrentIndex] = useState(0);
+  const [isFlipped, setIsFlipped] = useState(false); // Tracks if the card is flipped
+
+  useEffect(() => {
+    setData(data1);
+  }, [data1]);
+  const [currentIndex1, setCurrentIndex1] = useState(data.length);
+
+  const handleImageClick = () => {
+    setCurrentIndex1(
+      (prevIndex1) => (prevIndex1 - 1 + data.length) % data.length
+    );
+    setIsFlipped(true); // Trigger flip animation
+    setTimeout(() => {
+      setIsFlipped(false);
+      // Reset the flip animation after it completes
+
+      setCurrentIndex((prevIndex) => (prevIndex + 1) % data.length); // Switch to the next image
+    }, 800); // Matches the CSS animation duration (0.8s)
+  };
+
   return (
     <div>
       <div className="wall">
-       
         {data.length > 0 && (
           <div className="frame" onClick={handleImageClick}>
- <div className="boxx">
- <div className="discrip">
-            
-            <p className="www">{data[currentIndex].name}</p>
-            </div>
-            <div className="pagec">
-            <img
-              className="paintings"
-              src={data[currentIndex].image}
-              alt={data[currentIndex].name}
-            />
-          </div>
-          <p className={`namewww ${isAnimatingName ? "animate" : ""}`}>{data[currentIndex].name}</p>
-          </div>
-            </div>
-        )}
-       
-      </div>
+            <div className="kms">
+            <div className={`flip-card ${isFlipped ? "flipped" : ""}`}>
+              
+              <div className="flip-card-backk">
+                <img
+                  className="paintings"
+                  src={data[currentIndex1].image}
+                  alt={data[currentIndex1].name}
+                />
+              </div>
+              <div className="dis"> 
+                <div className="writing">
+                <h1>{data[currentIndex].name}</h1>
+              <p>{data[currentIndex].description || "No description"}</p></div></div>
+              <div className="flip-card-inner">
+                <div className="flip-card-front">
+                  <img
+                    className="paintings"
+                    src={data[currentIndex].image}
+                    alt={data[currentIndex].name}
+                  />
+                </div>
 
+                <div className="flip-card-back">
+                <div className="writing">
+                  <h1>{data[currentIndex1].name}</h1>
+                  <p>{data[currentIndex1].description || "No description"}</p></div>
+                </div>
+              </div>
+              </div>
+            </div>
+          </div>
+        )}
+      </div>
       <Contact />
     </div>
   );

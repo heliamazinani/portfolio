@@ -1,53 +1,63 @@
 [
     {
       "id": 1,
-      "name": "Jane Doe",
-      "image": "/images/birdi.jpg"
+      "name": "Untitled",
+      "image": "/images/birdi.jpg",
+      "description": "This took 21 hours \ni was learning how to draw without outlines"
     },
     {
       "id": 2,
-      "name": "Birdi",
-      "image": "/images/bowl.jpg"
+      "name": "Jane Doe",
+      "image": "/images/bowl.jpg",
+      "description":"feeling traped and helpless"
     },
     {
         "id": 3,
-        "name": "eye1",
-        "image":"/images/ferdowsi.JPG"
+        "name": "intro",
+        "image":"/images/ferdowsi.JPG",
+        "description":"made for a the game assosiation of Ferdowsi university a 3 minute ad animation"
       },
       {
         "id": 4,
-        "name": "eye1",
-        "image": "/images/GTC.JPG"
+        "name": "GTC",
+        "image": "/images/GTC.JPG",
+        "description":"the game board for the get the cheese project"
       },
       {
         "id": 5,
-        "name": "ferdowsi",
-        "image":"/images/di.JPG"
+        "name": "hbd",
+        "image":"/images/di.JPG",
+        "description":"a birthday gift to a friend"
       },
       {
         "id": 6,
-        "name": "GTC",
-        "image": "/images/cock.jpg"
+        "name": "Band-t",
+        "image": "/images/cock.jpg",
+        "description":"desgined for a tshirt for a friend"
       },
       {
         "id": 7,
-        "name": "sj",
-        "image": "/images/rats.jpg"
+        "name": "rats",
+        "image": "/images/rats.jpg",
+        "description":"the ending for the get the cheese project"
       },
       {
         "id": 8,
-        "name": "sj",
-        "image": "/images/fer.gif"
+        "name": "Outro",
+        "image": "/images/fer.gif",
+        "description":"made for a the game assosiation of Ferdowsi university a 3 minute ad animation"
       },
       {
         "id": 9,
-        "name": "sj",
-        "image": "/images/tsm.gif"
+        "name": "board",
+        "image": "/images/tsm.gif",
+        "description":"the background of the traveling salesman game"
       },
       {
         "id": 10,
-        "name": "sj",
-        "image": "/images/t.gif"
+        "name": "menu",
+        "image": "/images/t.gif",
+        "description":"the menu of the traveling salesman game"
       }
 
   ]
