@@ -13,6 +13,16 @@
         "id": 3,
         "name": "eye1",
         "image": "/images/eye1.jpg"
+      },
+      {
+        "id": 4,
+        "name": "Bite",
+        "image": "/images/Bite.jpg"
+      },
+      {
+        "id": 5,
+        "name": "Wash day",
+        "image": "/images/washingmachine.jpg"
       }
 
   ]

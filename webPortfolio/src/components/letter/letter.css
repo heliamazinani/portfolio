@@ -86,3 +86,12 @@
     background: none;
     border-color: rgba(0, 0, 0, 0.47);
 }
+@media(max-width:768px){
+
+  .innerletter{
+    height: 145px;
+    
+  }
+
+ 
+}

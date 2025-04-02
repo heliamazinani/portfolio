@@ -72,9 +72,7 @@
     grid-area: 1 / 1;
 }
 @media(max-width:768px) {
-    .me{
-        width: 150px;
-    }
+
     .bio h1{
         margin-top: 50px;
         width: 90%;

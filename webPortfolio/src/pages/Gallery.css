@@ -177,3 +177,37 @@
     text-shadow: 1px 1px rgba(0, 0, 0, 0.208);
     margin-top: 200px;
 }
+@media(max-width:768px){
+    .flip-card{
+        width: 200px;
+        height: 350px;
+    }
+    .dis{ width: 160px;
+        height: 350px;
+    left: 200px;}
+        .kms{
+            width: 410px;
+        }
+    .paintings{
+        width: 190px;
+    }
+    .flip-card.flipped .flip-card-inner {
+        transform:   translateX(200px) rotateY(150deg);
+    }
+    .writing{
+        margin-top: 40px;
+        margin-left: -50px;
+    }
+    .writing p{
+        width: 180px;
+    }
+    .trad{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+    }
+    
+    
+}
