@@ -241,4 +241,11 @@
     .flip-card-backk{
         width: 180px;
     }
+    .flip-card.flipped .flip-card-inner {
+        transform:   translateX(140px) rotateY(180deg);
+    }
+    .wall{
+        font-size: 8px;
+       
+    }
 }
