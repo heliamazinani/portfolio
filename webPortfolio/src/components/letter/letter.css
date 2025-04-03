@@ -98,7 +98,7 @@
 @media(max-width:567px){
 
   .innerletter{
-    flex-direction: column;
+   height: 115px;
     
   }
   .help{
@@ -106,7 +106,11 @@
   }
   .help textarea{
     width: 100px;
-    height: 50px;
+    height: 30px;
+  }
+  .help button{
+    height: 35px;
+    width: 90px;
   }
   @keyframes goin {
     0% {
