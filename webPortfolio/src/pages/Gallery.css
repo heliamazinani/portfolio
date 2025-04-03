@@ -242,7 +242,7 @@
         width: 180px;
     }
     .flip-card.flipped .flip-card-inner {
-        transform:   translateX(140px) rotateY(180deg);
+        transform:   translateX(140px) rotateY(150deg);
     }
     .wall{
         font-size: 8px;
