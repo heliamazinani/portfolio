@@ -9,7 +9,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-right: 30%;
+   
     margin-bottom: 20px;
    
 }
@@ -36,13 +36,7 @@
     text-shadow: 1px 1px rgba(205, 205, 205, 0.76);
 }
 
-.boxx {
-    display: flex;
-    flex-direction: row;
-    height: auto;
-    border: solid 2px black;
-    position: relative;
-}
+
 
 .paintings {
     height: auto;
@@ -152,7 +146,8 @@
     background-color: aqua;
     border: 20px rgb(79, 42, 14) solid;
     margin: 200px;
-    margin-left: 400px;
+    margin-right: 0%;
+    margin-left: 0px;
     width: 840px;
 }
 .flip-card-front {
@@ -210,4 +205,40 @@
     }
     
     
+}
+@media (max-width: 576px) {
+    .flip-card {
+        width: 150px;
+        height: 250px;
+    }
+    .dis {
+        width: 105px;
+        height: 250px;
+        left: 150px;
+    }
+    .kms {
+        width: 305px;
+
+    }
+    .paintings {
+        width: 140px;
+    }
+    .writing {
+        margin-top: 20px;
+        margin-left: -30px;
+    }
+    .writing p {
+        width: 140px;
+    }
+    .trad {
+        margin-top: 100px;
+        margin-left: 20px;
+        margin-right: 20px;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .flip-card-backk{
+        width: 180px;
+    }
 }

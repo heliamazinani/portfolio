@@ -78,3 +78,14 @@
 
     
 }
+
+@media (max-width:576px) {
+    .skill-bar {
+        width: 350px;
+    }
+    .skill-bar Blood{
+        display: none;
+    }
+
+    
+}

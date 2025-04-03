@@ -108,3 +108,28 @@ a{
         margin-right: 10%;
     }
   }
+  @media(max-width:576px){
+    .pborder{
+  
+        border-left: 1px black solid;
+        position: relative;
+        flex-direction: column;
+        margin-left: 4%;
+        margin-right: 10%;
+        margin-bottom: 60px;
+
+    }
+    .fix{
+        flex-direction: column;
+    }
+    .plan{
+        margin-left: 0px;
+    }
+    
+.pborder:hover::before {
+    top: 23px;
+    left: 23px;
+  }
+  
+
+  }

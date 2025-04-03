@@ -23,7 +23,7 @@ const Skills = () => {
                         <Blood  ></Blood>
                         <Blood  ></Blood>
                         <Blood1></Blood1>
-                        <Blood1  ></Blood1>
+                        <Blood  ></Blood>
                         
                     </div>
                 </div>

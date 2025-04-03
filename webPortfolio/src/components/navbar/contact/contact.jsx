@@ -40,7 +40,8 @@ const Contact = () => {
           <h1>Lets talk</h1>
           <p>
             iferuhvygdbj
-            sacnkjmjiorufhyvgydjcnskweio;jrfuhyvjdncksmlwjeiurfhygvdjns
+            sacnkjmjiorufhyvgydjcnskweio;j
+            rfuhyvjdncksmlwjeiurfhygvdjns
           </p>
         
       <div className="container">

@@ -33,7 +33,7 @@
     }
     100% {
         transform-style: preserve-3d;
-        transform:translateY(-78px) ;
+        transform:translateY(-78%) ;
     }
 }
 
@@ -94,4 +94,29 @@
   }
 
  
+}
+@media(max-width:567px){
+
+  .innerletter{
+    flex-direction: column;
+    
+  }
+  .help{
+    flex-direction: column;
+  }
+  .help textarea{
+    width: 100px;
+    height: 50px;
+  }
+  @keyframes goin {
+    0% {
+        
+    }
+    100% {
+        transform-style: preserve-3d;
+        transform:translateY(-10px) ;
+    }}
+ .let , .let1{
+  top: 510px;
+ }
 }
