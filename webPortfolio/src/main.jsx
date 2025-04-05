@@ -11,7 +11,10 @@ import Commission from "./pages/Commission";
 import N from "./components/navbar/navbar"
 import Portfolio from "./pages/Portfolio"
 import Gallery from "./pages/Gallery"
+
+
 const router = createBrowserRouter([
+
   {
     path: "/",
     element: <div><N></N><Home></Home></div>,
@@ -34,8 +37,11 @@ const router = createBrowserRouter([
   },
 ]);
 
+
 ReactDOM.createRoot(document.getElementById("root")).render(
+  
   <React.StrictMode>
+  
     <RouterProvider router={router} />
   </React.StrictMode>
 );

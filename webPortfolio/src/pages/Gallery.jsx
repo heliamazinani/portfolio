@@ -11,6 +11,7 @@ import Trad from"./trad"
 
 const Gallery = () =>{
     const [tabIndex, setTabIndex] = useState(0);
+
   return (
     <div className="bb">
         {

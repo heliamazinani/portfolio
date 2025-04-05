@@ -5,6 +5,7 @@ import Contact from "../components/navbar/contact/contact";
 import Skills from "../components/navbar/skills/skills";
 
 const Home = () =>{
+
     return(
 
         <div>
